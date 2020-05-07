@@ -1,0 +1,118 @@
+
+* {
+  box-sizing: border-box;
+border-radius:10px;
+
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+background: canvas;
+}
+
+
+
+/* Canvas*/
+
+
+#canvas{
+position:fixed;
+   left:0;
+   top:0;
+   z-index:-1;
+background-color: #2c343f;
+width: 100%;
+height: 100%;
+border-radius:0px;		
+}
+
+/* Center website */
+.main {
+  max-width: 1500px;
+margin-left:100px;
+
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 10px;
+
+}
+
+/* Create equal columns that floats next to each other */
+.column {
+  float:left;
+  width: 40%;
+margin:10px;
+  display: none; /* Hide all elements by default */
+ box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+
+}
+
+.responsive
+{
+width:100%;
+height:100%;
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: grey;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #A9A9A9}
+
+.button:active {
+  background-color: black;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
