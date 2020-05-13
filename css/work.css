@@ -1,10 +1,3 @@
-
-* {
-  box-sizing: border-box;
-border-radius:10px;
-
-}
-
 body {
   background-color: #f1f1f1;
   padding: 20px;
@@ -12,7 +5,31 @@ body {
 background: canvas;
 }
 
+.btn:focus, .btn:active, button:focus, button:active {
+  
+outline: none !important;
+  
+box-shadow: none !important;
 
+}
+
+
+
+#image-gallery .modal-footer{
+  
+display: block;
+
+}
+
+
+
+.thumb{
+  
+margin-top: 15px;
+  
+margin-bottom: 15px;
+
+}
 
 /* Canvas*/
 
@@ -30,7 +47,6 @@ border-radius:0px;
 
 /* Center website */
 .main {
-  max-width: 1500px;
 margin-left:100px;
 
 }
@@ -38,40 +54,10 @@ margin-left:100px;
 h1 {
   font-size: 50px;
   word-break: break-all;
-}
-
-.row {
-  margin: 10px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 10px;
-
-}
-
-/* Create equal columns that floats next to each other */
-.column {
-  float:left;
-  width: 40%;
-margin:10px;
-  display: none; /* Hide all elements by default */
- box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+margin-top:50px;
 }
 
 
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
 }
 
 /* The "show" class is added to the filtered elements */
@@ -80,14 +66,10 @@ margin:10px;
 
 }
 
-.responsive
-{
-width:100%;
-height:100%;
-}
+
 .button {
   display: inline-block;
-  padding: 15px 25px;
+  padding: 5px 15px;
   font-size: 24px;
   cursor: pointer;
   text-align: center;
@@ -107,12 +89,19 @@ height:100%;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-
-
-
-
-
-.responsive {
-  max-width: 100%;
-  height: auto;
+#right-button {
+  position: absolute;
+  top: 39px;
+  right: 100px;
 }
+
+#left-button {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+
+
+
+
+
