@@ -2,257 +2,609 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/work.css"> 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
-<button class="button" onclick="window.location.href = 'index.html';" style="margin-left:5%;position:relative">Back to the cover</button>
-<button class="button" onclick="window.location.href = 'anim.html';" style="margin-left:53%;position:absolute">About the team</button>
+<button class="button" name="button" id="left-button" onclick="window.location.href = 'index.html';" style="margin-left:5%;position:relative">Back to the cover</button>
+<button class="button" name="button" id="right-button" onclick="window.location.href = 'anim.html';" >About the team</button>
 <!-- MAIN (Center website) -->
 <div class="main">
+<br>
 <h1 style="color:white">Welcome/ Swagat-che/ Welkom/ bonvenon/ Bienvenue/ herzlich-willkommen  </h1>
 <canvas id="canvas"></canvas>
-<hr>
-<h2 style="color:white">No No... We know english only hahaha.. Well, here are some of the best clicks of our team. HAVE A LOOK.</h2>
-<div id="myBtnContainer">
-  <button class="button active" onclick="filterSelection('all')"> Show all</button>
-  <button class="button" onclick="filterSelection('nature-m')"> Nature land</button>
-  <button class="button" onclick="filterSelection('nature-w')"> Nature Water</button>
-  <button class="button" onclick="filterSelection('wedding')"> Wedding</button>
-</div>
+</br>
+<h2 style="color:white">No No... We know english only hahaha.. Well, here are some of the best clicks of our team. HAVE A LOOK.</h2><h6 style="color:white">(Click on the image to zoom)</h6> 
 <br>
+
+
+
+
+
 <!--Gallery Grid -->
 
-<div class="column nature-w">
-    <div class="content">
-    <img src="https://images.alphacoders.com/501/thumb-350-501397.jpg" alt="u1" class="responsive"  >
-      <h3>WOW!! There's life too.</h3>
-    </div>
-  </div> 
 
-<div class="column nature-m">
-    <div class="content">
-    <img src="https://images.pexels.com/photos/1434608/pexels-photo-1434608.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="m" class="responsive">
-      <h3>Can't take the eyes off.</h3>
-    </div>
-  </div>
 
-<div class="column nature-w">
-    <div class="content">
-    <img src="https://images2.alphacoders.com/966/thumb-1920-96622.jpg" alt="o" class="responsive">
-      <h3>Water Water everywhere.</h3>
-    </div>
-  </div>
 
-<div class="column nature-m">
-    <div class="content">
-    <img src="https://lh4.googleusercontent.com/-NPi3WRtDhr4/VPMXdaSKzXI/AAAAAAAAIPk/So2FIDKWZoU/Into%2Bthe%2BMist.jpg?imgmax=0" alt="m" class="responsive">
-<h3>Misty Road... Where to go.</h3>    
+<div class="container">
+	
+<div class="row">
+		
+<div class="row">
+  
+          
+<div class="col-lg-4 col-md-4 col-xs-6  thumb">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="WOW!! There's life too."
+ data-image="https://images.alphacoders.com/501/thumb-350-501397.jpg"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://images.alphacoders.com/501/thumb-350-501397.jpg"
+ alt="Another alt text">
+   
+</a>
+            
 </div>
-  </div>
+ 
+<div class="col-lg-4 col-md-4 col-xs-6  thumb ">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Can't take the eyes off."
+ data-image="https://images.pexels.com/photos/1434608/pexels-photo-1434608.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://images.pexels.com/photos/1434608/pexels-photo-1434608.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" 
+ alt="Another alt text">
+   
+</a>
+            
+</div>
 
-<div class="column nature-m">
-    <div class="content">
-    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&w=1000&q=80" alt="m1" class="responsive">
-      <h3>Mother nature.</h3>
-    </div>
-  </div> 
+<div class="col-lg-4 col-md-4 col-xs-6  thumb ">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Water Water everywhere."
+ data-image="https://images2.alphacoders.com/966/thumb-1920-96622.jpg"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://images2.alphacoders.com/966/thumb-1920-96622.jpg"
+ alt="Another alt text">
+   
+</a>
+            
+</div>
 
-<div class="column nature-w">
-    <div class="content">
-    <img src="https://wallpaperaccess.com/full/115008.jpg" alt="o1" class="responsive">
-      <h3>Finally the sky meets the ocean.</h3>
-    </div>
- </div>
+<div class="col-lg-4 col-md-4 col-xs-6  thumb">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Misty Road... Where to go."
+ data-image="https://lh4.googleusercontent.com/-NPi3WRtDhr4/VPMXdaSKzXI/AAAAAAAAIPk/So2FIDKWZoU/Into%2Bthe%2BMist.jpg?imgmax=0"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://lh4.googleusercontent.com/-NPi3WRtDhr4/VPMXdaSKzXI/AAAAAAAAIPk/So2FIDKWZoU/Into%2Bthe%2BMist.jpg?imgmax=0"
+ alt="Another alt text">
+   
+</a>
+            
+</div>
 
-<div class="column wedding">
-    <div class="content">
-    <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="w4" class="responsive">
-      <h3>Most awaited day of one's life.</h3>
-    </div>
-  </div>
+<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Mother nature."
+ data-image="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&w=1000&q=80"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&w=1000&q=80"
+ alt="Another alt text">
+   
+</a>
+            
+</div>
 
-  <div class="column nature-m">
-    <div class="content">
-      <img src="https://images.pexels.com/photos/1100946/pexels-photo-1100946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="d" class="responsive">
-      <h3>Drop of life.</h3>
-    </div>
-  </div>
+<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Finally the sky meets the ocean."
+ data-image="https://wallpaperaccess.com/full/115008.jpg"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://wallpaperaccess.com/full/115008.jpg"
+ alt="Another alt text">
+   
+</a>
+            
+</div>
 
+<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Most awaited day of one's life."
+ data-image="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+ alt="Another alt text">
+   
+</a>
+            
+</div>
 
-<div class="column nature-w">
-    <div class="content">
-    <img src="https://wallup.net/wp-content/uploads/2017/11/22/315833-minimalism-water-underwater-748x468.jpg" alt="u2" class="responsive">
-      <h3>Zero gravity underwater.</h3>
-    </div>
-  </div>
+<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Drop of life."
+ data-image="https://images.pexels.com/photos/1100946/pexels-photo-1100946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://images.pexels.com/photos/1100946/pexels-photo-1100946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+ alt="Another alt text">
+   
+</a>
+            
+</div>
 
+<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Zero gravity underwater."
+ data-image="https://wallup.net/wp-content/uploads/2017/11/22/315833-minimalism-water-underwater-748x468.jpg"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://wallup.net/wp-content/uploads/2017/11/22/315833-minimalism-water-underwater-748x468.jpg"
+ alt="Another alt text">
+   
+</a>
+            
+</div>
 
-<div class="column nature-m">
-    <div class="content">
-    <img src="https://i.pinimg.com/originals/6a/92/5a/6a925a817a17a9b8f466e8bc9459fd35.jpg" alt="n1" class="responsive">
-      <h3>Green and Green.</h3>
-    </div>
-  </div>
+<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Green and Green."
+ data-image="https://i.pinimg.com/originals/6a/92/5a/6a925a817a17a9b8f466e8bc9459fd35.jpg"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://i.pinimg.com/originals/6a/92/5a/6a925a817a17a9b8f466e8bc9459fd35.jpg"
+ alt="Another alt text">
+   
+</a>
+            
+</div>
 
-<div class="column nature-w">
-    <div class="content">
-    <img src="https://wallpapershome.com/images/wallpapers/sea-3840x2160-4k-hd-wallpaper-ocean-water-sunset-sunrise-sun-wave-601.jpg" alt="o2" class="responsive">
-      <h3>Crystal or water??!!</h3>
-    </div>
-  </div>
+<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
+data-title="Crystal or water??!!"
+ data-image="https://wallpapershome.com/images/wallpapers/sea-3840x2160-4k-hd-wallpaper-ocean-water-sunset-sunrise-sun-wave-601.jpg"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://wallpapershome.com/images/wallpapers/sea-3840x2160-4k-hd-wallpaper-ocean-water-sunset-sunrise-sun-wave-601.jpg"
+ alt="Another alt text">
+   
+</a>
+            
+</div>
 
-<div class="column wedding">
-    <div class="content">
-    <img src="https://i.pinimg.com/originals/3e/cf/80/3ecf80926da723850035ef6ddeb64b84.jpg" alt="w2" class="responsive">
-      <h3>Keep smiling beautiful.</h3>
-    </div>
-  </div>
+<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
+data-title="Keep smiling beautiful."
+ data-image="https://i.pinimg.com/originals/3e/cf/80/3ecf80926da723850035ef6ddeb64b84.jpg"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://i.pinimg.com/originals/3e/cf/80/3ecf80926da723850035ef6ddeb64b84.jpg"
+ alt="Another alt text">
+   
+</a>
+            
+</div>
 
+<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
+data-title="When mountain kisses the sky."
+ data-image="https://images2.alphacoders.com/238/thumb-1920-238870.jpg"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://images2.alphacoders.com/238/thumb-1920-238870.jpg"
+ alt="Another alt text">
+   
+</a>
+            
+</div>
 
+<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
+data-title="The never ending road."
+ data-image="https://images.pexels.com/photos/38537/woodland-road-falling-leaf-natural-38537.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://images.pexels.com/photos/38537/woodland-road-falling-leaf-natural-38537.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+ alt="Another alt text">
+   
+</a>
+            
+</div>
 
-  <div class="column nature-m">
-    <div class="content">
-    <img src="https://images2.alphacoders.com/238/thumb-1920-238870.jpg" alt="m2" class="responsive">
-      <h3>When mountain kisses the sky.</h3>
-    </div>
-  </div>
+<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
+data-title="City that never sleeps."
+ data-image="https://wallpapercave.com/wp/wp2323010.jpg"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://wallpapercave.com/wp/wp2323010.jpg"
+ alt="Another alt text">
+   
+</a>
+            
+</div>
 
-  <div class="column nature-m">
-    <div class="content">
-    <img src="https://images.pexels.com/photos/38537/woodland-road-falling-leaf-natural-38537.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="n2" class="responsive">
-      <h3>The never ending road.</h3>
-    </div>
-  </div>
+<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
+data-title="Token of love, Eiffel Tower."
+ data-image="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&w=1000&q=80"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&w=1000&q=80"
+ alt="Another alt text">
+   
+</a>
+            
+</div>
 
+<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
+data-title="Shades of the ocean."
+ data-image="https://images.unsplash.com/photo-1549074862-6173e20d02a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://images.unsplash.com/photo-1549074862-6173e20d02a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+ alt="Another alt text">
+   
+</a>
+            
+</div>
 
+<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
+data-title="The smile that worths everything."
+ data-image="https://www.itl.cat/pngfile/big/218-2182369_free-download-christian-brides-grooms-wedding-couple-christian.jpg"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://www.itl.cat/pngfile/big/218-2182369_free-download-christian-brides-grooms-wedding-couple-christian.jpg"
+ alt="Another alt text">
+   
+</a>
+            
+</div>
 
-<div class="column nature-l">
-    <div class="content">
-    <img src="https://wallpapercave.com/wp/wp2323010.jpg" alt="C1" class="responsive">
-      <h3>City that never sleeps.</h3>
-    </div>
-  </div>
+<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
+data-title="Bride?? Goddess?? You decide."
+ data-image="https://lh3.googleusercontent.com/proxy/ZCIRBQsNqyNXGU3mY7UPYPEGqnm-QvhyMyS1_jMA1pTefu77uedw1Y5u-LrHDOo9mujUd508y_qIRdRKJ29I5UmCyIeoxSQnmOtw-GFjN4urGVK8K0rVQVrrjDuCVskSjejzFokqbIPwyz2aFVH__086EfDM3ESBoRSQ66vvOiAIFMsKDlqqE9SeGKBjQi8tpOLcigLDmxqnZw"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://lh3.googleusercontent.com/proxy/ZCIRBQsNqyNXGU3mY7UPYPEGqnm-QvhyMyS1_jMA1pTefu77uedw1Y5u-LrHDOo9mujUd508y_qIRdRKJ29I5UmCyIeoxSQnmOtw-GFjN4urGVK8K0rVQVrrjDuCVskSjejzFokqbIPwyz2aFVH__086EfDM3ESBoRSQ66vvOiAIFMsKDlqqE9SeGKBjQi8tpOLcigLDmxqnZw"
+ alt="Another alt text">
+   
+</a>
+            
+</div>
 
+<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
+data-title="Tree of life."
+ data-image="https://i.pinimg.com/originals/1d/50/ff/1d50ff2cc06520c61c57774b401fdd77.jpg"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://i.pinimg.com/originals/1d/50/ff/1d50ff2cc06520c61c57774b401fdd77.jpg"
+ alt="Another alt text">
+   
+</a>
+            
+</div>
 
+<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
+data-title="Promises for life."
+ data-image="https://www.itl.cat/pngfile/big/217-2170090_pakistani-brides-indian-wedding-couple-poses.jpg"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://www.itl.cat/pngfile/big/217-2170090_pakistani-brides-indian-wedding-couple-poses.jpg"
+ alt="Another alt text">
+   
+</a>
+            
+</div>
 
-<div class="column nature-l">
-    <div class="content">
-    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&w=1000&q=80" alt="p" class="responsive">
-      <h3>Token of love, Eiffel Tower.</h3>
-    </div>
- </div>
+<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
+data-title="Mother nature is great, isn't it??!!!"
+ data-image="https://images.pexels.com/photos/358457/pexels-photo-358457.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://images.pexels.com/photos/358457/pexels-photo-358457.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+ alt="Another alt text">
+   
+</a>
+            
+</div>
 
-<div class="column nature-w">
-    <div class="content">
-    <img src="https://images.unsplash.com/photo-1549074862-6173e20d02a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="u" class="responsive">
-      <h3>Shades of the ocean.</h3>
-    </div>
-  </div>
+<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
+data-title="Another disney princess spotted!!!"
+ data-image="https://freedesignfile.com/upload/2017/05/Pink-wedding-dress-with-bouquet-of-bride-HD-picture.jpg"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://freedesignfile.com/upload/2017/05/Pink-wedding-dress-with-bouquet-of-bride-HD-picture.jpg"
+ alt="Another alt text">
+   
+</a>
+            
+</div>
 
-<div class="column wedding">
-    <div class="content">
-    <img src="https://www.itl.cat/pngfile/big/218-2182369_free-download-christian-brides-grooms-wedding-couple-christian.jpg" alt="w"  class="responsive">
-      <h3>The smile that worths everything.</h3>
-    </div>
-  </div>
-
-<div class="column wedding">
-    <div class="content">
-    <img src="https://lh3.googleusercontent.com/proxy/z5dmNlSsiHz69yAjGDksE7yC7CRupZazgD5lW5P1heiAS8zlVerVlMt-gJ_m3jbl17M8GgL-d7JWm1kQnhkKrjbfE5qJngCmoDqltygUumRY4Pp_ighFvxFQ-NwyOjt38_DoTpdfdcl6HpZT1DOYKNmoWzs5DxMEW_cLp7kJ4XrXbhczDJ6cdggdxHdVWvMD4vnWGss4Aihs7g" alt="w5" class="responsive">
-      <h3>Bride?? Goddess?? You decide.</h3>
-    </div>
-  </div>
-
-<div class="column nature-m">
-    <div class="content">
-      <img src="https://i.pinimg.com/originals/1d/50/ff/1d50ff2cc06520c61c57774b401fdd77.jpg" alt="n" class="responsive">
-      <h3>Tree of life.</h3>
-    </div>
-  </div>
-
-<div class="column wedding">
-    <div class="content">
-    <img src="https://www.itl.cat/pngfile/big/217-2170090_pakistani-brides-indian-wedding-couple-poses.jpg" alt="w6" class="responsive">
-      <h3>Promises for life.</h3>
-    </div>
-  </div>
-
-  <div class="column nature-m">
-    <div class="content">
-      <img src="https://images.pexels.com/photos/358457/pexels-photo-358457.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="f" class="responsive">
-      <h3>Mother nature is great, isn't it??!!!</h3>
-    </div>
-  </div>
-
-<div class="column wedding">
-    <div class="content">
-    <img src="https://freedesignfile.com/upload/2017/05/Pink-wedding-dress-with-bouquet-of-bride-HD-picture.jpg" alt="w3" class="responsive">
-      <h3>Another disney princess spotted!!!</h3>
-    </div>
-  </div>
-
-  <div class="column nature-m">
-    <div class="content">
-      <img src="https://images.pexels.com/photos/861313/pexels-photo-861313.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="f1" class="responsive">
-      <h3>The GREATTTTT fall.</h3>
-    </div>
-  </div>
-
+<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                
+<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
+data-title="The GREATTTTT fall."
+ data-image="https://images.pexels.com/photos/861313/pexels-photo-861313.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+ 
+data-target="#image-gallery">
+                    
+<img class="img-thumbnail" src="https://images.pexels.com/photos/861313/pexels-photo-861313.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+ alt="Another alt text">
+   
+</a>
+            
+</div>
+</div>
 </br>
+<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+            <div class="modal-dialog modal-lg">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+
+                        <h4 class="modal-title" id="image-gallery-title"></h4>
+
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+
+                        </button>
+
+                    </div>
+
+                    <div class="modal-body">
+
+                        <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+
+                    </div>
+
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+
+                        </button>
 
 
+                        <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+	</div>
+
+</div>
 <!-- END GRID -->
-</div>
-<br>
-<button class="button" onclick="window.location.href = 'anim.html';" style="margin-left:30%;position:relative;margin-top:10%">Want to know about the team? Then click here.</button>
-</br>
+
+
+
+
+
+
+<button class="button" onclick="window.location.href = 'anim.html';" style="margin-left:25%;position:relative;margin-top:0px">Want to know about the team? Then click here.</button>
 <!-- END MAIN -->
 </div>
 
 <script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
 
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
+let modalId = $('#image-gallery');
 
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
+$(document)
+  
+.ready(function () 
+{
+
+    
+loadGallery(true, 'a.thumbnail');
+
+ 
+function disableButtons(counter_max, counter_current) {
+      
+$('#show-previous-image, #show-next-image')
+        
+.show();
+      
+if (counter_max === counter_current) {
+        
+$('#show-next-image')
+          
+.hide();
+      
+} else if (counter_current === 1) {
+        
+$('#show-previous-image')
+          
+.hide();
+      
 }
+    
+}
+
+    
+
+    
+function loadGallery(setIDs, setClickAttr) {
+      
+let current_image,
+        
+selector,
+        
+counter = 0;
+
+      
+$('#show-next-image, #show-previous-image')
+        
+.click(function () {
+          
+if ($(this)
+            
+.attr('id') === 'show-previous-image') {
+            
+current_image--;
+          
+} else {
+            
+current_image++;
+          
+}
+
+          
+selector = $('[data-image-id="' + current_image + '"]');
+          
+updateGallery(selector);
+        
+});
+
+
+      function updateGallery(selector) {
+        
+let $sel = selector;
+        
+current_image = $sel.data('image-id');
+        
+$('#image-gallery-title')
+          
+.text($sel.data('title'));
+        
+$('#image-gallery-image')
+          
+.attr('src', $sel.data('image'));
+        
+disableButtons(counter, $sel.data('image-id'));
+      
+}
+
+      
+if (setIDs == true) {
+        
+$('[data-image-id]')
+          
+.each(function () {
+            
+counter++;
+            
+$(this)
+              
+.attr('data-image-id', counter);
+          
+});
+      
+}
+      
+$(setClickAttr)
+        
+.on('click', function () {
+          
+updateGallery($(this));
+        
+});
+    
+}
+  
+});
+
+
+
+
+
+$(document)
+  
+.keydown(function (e) {
+    
+switch (e.which) {
+      
+case 37:
+        
+if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
+          
+$('#show-previous-image')
+            
+.click();
+        
+}
+        
+break;
+
+      
+case 39:        
+if ((modalId.data('bs.modal') || {})._isShown && $('#show-next-image').is(":visible")) {
+          
+$('#show-next-image')
+            
+.click();
+        
+}
+        
+break;
+
+      
+default:
+       
+ return;     
+}
+    
+e.preventDefault();  
+});
+
 </script>
 
 
